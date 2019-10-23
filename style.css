@@ -2,3 +2,8 @@ html, body {
   margin: 0;
   height: 100%;
 }
+
+line {
+  stroke: lightcoral;
+  stroke-width: 5px;
+}
