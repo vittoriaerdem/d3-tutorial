@@ -7,3 +7,22 @@ line {
   stroke: lightcoral;
   stroke-width: 5px;
 }
+
+g.grp3 circle, 
+g.grp3 path, 
+g.grp4 path, 
+g.grp0 circle {
+  stroke: orange;
+  stroke-width: 3;
+  fill: none;
+} 
+
+g.tick line {
+  stroke: green;
+
+}
+
+g.tick text {
+  font-size: 12px;
+  fill: blue;
+}

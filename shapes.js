@@ -50,8 +50,6 @@ svg.selectAll('line')
 
 var textArray = ['one', 'two', 'three'];
 var fixedX = 500;
-
-
 svg.append('text').selectAll('tspan')
     .data(textArray)
     .enter()
