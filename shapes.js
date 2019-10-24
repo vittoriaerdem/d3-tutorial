@@ -47,3 +47,20 @@ svg.selectAll('line')
     .attr('y1', function(d, i) {return 400 + (i*20);})
     .attr('x2', function(d) {return fixedX+(d*20);})
     .attr('y2', function(d, i) {return 400 + (i*20);})
+
+var textArray = ['one', 'two', 'three'];
+var fixedX = 500;
+
+
+svg.append('text').selectAll('tspan')
+    .data(textArray)
+    .enter()
+    .append('tspan')
+    .attr('x', fixedX)
+    .attr('y', function(d,i){return 400 +(50*i)})
+    .attr('stroke','red')
+    .attr('stroke-width','2')
+    .attr('text-anchor','start')
+    .attr('dominate-baseline', 'middle')
+    .attr('font-size', 50)
+    .text(function(d){return d;});
